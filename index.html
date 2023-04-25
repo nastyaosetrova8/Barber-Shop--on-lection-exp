@@ -5,22 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="">
-        <img src="./img/logo.svg" width="69" alt="barber-logo" />
+    <header class="header">
+      <a class="logo" href="">
+        <img
+          class="logo-img"
+          src="./img/logo.svg"
+          width="69"
+          alt="barber-logo"
+        />
       </a>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+      <nav class="nav">
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a class="nav-link nav-items link" id="link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Services and prices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Barbers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#contacts">Contacts</a>
+          </li>
         </ul>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">Online-booking</button>
+        <a class="nav-bottom" href="">llolol</a>
       </nav>
+      <a class="nav-link header-tel" href="tel:+380441111111"
+        >+38 044 111 11 11</a
+      >
+      <button class="header-btn" type="button">Online-booking</button>
     </header>
     <main>
       <section>
@@ -43,7 +66,7 @@
           </li>
         </ul>
         <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
+        <h1 class="visually-hidden">BarberShop</h1>
         <p>
           We are experts in trendy men’s haircuts. We work quickly, carefully
           and with style.
@@ -51,7 +74,14 @@
       </section>
       <section id="about">
         <ul>
-          <li><img src="./img/about-1.jpg" width="270" alt="head trim" /></li>
+          <li>
+            <img
+              class="img"
+              src="./img/about-1.jpg"
+              width="270"
+              alt="head trim"
+            />
+          </li>
           <li><img src="./img/about-2.jpg" width="270" alt="beard trim" /></li>
         </ul>
 
@@ -160,7 +190,8 @@
         </address>
         <p>Working hours</p>
         <p>
-          Every day <em></em> from <time>9:00</time> to time <time>22:00</time>
+          Every day <em></em> from <time datetime="9:00">9:00</time> to time
+          <time datetime="22:00">22:00</time>
         </p>
       </section>
     </main>
