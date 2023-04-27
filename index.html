@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-wrapper">
         <a class="logo" href="">
           <img
             class="logo-img"
@@ -29,7 +29,7 @@
           />
         </a>
         <nav class="nav">
-          <ul class="nav-list list">
+          <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link nav-items link" id="link" href="#about"
                 >About</a
@@ -45,12 +45,13 @@
               <a class="nav-link link" href="#contacts">Contacts</a>
             </li>
           </ul>
-          <a class="nav-bottom" href="">llolol</a>
         </nav>
-        <a class="nav-link header-tel" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="header-btn" type="button">booking</button>
+        <div class="header-contact">
+          <a class="nav-link header-tel" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="header-btn" type="button">booking</button>
+        </div>
       </div>
     </header>
     <main>
@@ -112,26 +113,30 @@
         </p>
         <button type="button">online-booking</button>
       </section>
-      <section>
+      <section class="price">
         <div class="container">
           <p>Spend your time with the best masters</p>
           <h2>Services and prices</h2>
-          <ul>
-            <li>
-              <p>Men’s haircut</p>
-              <p>from 300 uah.</p>
+          <ul class="price-list">
+            <li class="price-item">
+              <p class="price-info">Men’s haircut</p>
+              <span class="price-line"></span>
+              <p class="price-info">from 300 uah.</p>
             </li>
-            <li>
-              <p>Beard trim</p>
-              <p>from 300 uah.</p>
+            <li class="price-item">
+              <p class="price-info">Beard trim</p>
+              <span class="price-line"></span>
+              <p class="price-info">from 300 uah.</p>
             </li>
-            <li>
-              <p>Mustache trim</p>
-              <p>from 200 uah.</p>
+            <li class="price-item">
+              <p class="price-info">Mustache trim</p>
+              <span class="price-line"></span>
+              <p class="price-info">from 200 uah.</p>
             </li>
-            <li>
-              <p>Straight razor shave</p>
-              <p>from 200 uah.</p>
+            <li class="price-item">
+              <p class="price-info">Straight razor shave</p>
+              <span class="price-line"></span>
+              <p class="price-info">from 200 uah.</p>
             </li>
           </ul>
           <ul>

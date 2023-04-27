@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   /* width: 1200px;
@@ -74,6 +74,31 @@ body {
   padding-top: 32px;
   background-color: #000000;
 }
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 130px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.header-contact {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .nav-link {
   font-weight: 600;
   line-height: 1.33;
@@ -109,4 +134,23 @@ body {
 .hero-title {
   margin-bottom: 20px;
   outline: 1px solid red;
+}
+
+/* price */
+
+.price-list {
+  max-width: 570px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.price-line {
+  height: 1px;
+  background-color: #fa0404e4;
+  flex-grow: 1;
+  margin: 0 12px;
 }
