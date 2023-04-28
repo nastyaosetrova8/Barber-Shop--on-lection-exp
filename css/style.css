@@ -123,8 +123,29 @@ body {
 /* hero */
 
 .hero {
-  padding-top: 184px;
+}
+
+.hero-wrapper {
+  display: flex;
+}
+
+.social-wrapper {
+  background-color: var(--white-color);
+  width: 155px;
+}
+
+.hero-main-content {
+  padding-top: 272px;
+  padding-left: 100px;
   padding-bottom: 208px;
+  background-image: linear-gradient(
+      to right,
+      #033cf8bf 300px,
+      #ffffff 400px,
+      var(--white-color) 500px
+    ),
+    url('../img/hero-bg.jpg');
+  flex-grow: 1;
 }
 
 .hero-suptitle {
@@ -136,11 +157,52 @@ body {
   outline: 1px solid red;
 }
 
+/* about */
+
+.about-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-title:before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
 /* price */
+
+.price {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 117px;
+  padding-bottom: 120px;
+  min-height: 692px;
+  background-image: url('../img/price-bg.png'), url('../img/about-1.jpg');
+  background-color: #111319;
+  background-repeat: no-repeat;
+  background-position: center, left;
+  background-size: cover, 200px;
+}
+
+.price-title {
+  margin-bottom: 44px;
+  color: var(--white-color);
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
 .price-list {
   max-width: 570px;
+  width: 100%;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  padding: 30px 20px;
 }
 
 .price-item {
@@ -148,9 +210,49 @@ body {
   align-items: baseline;
 }
 
-.price-line {
+.price-item::before {
+  content: '';
   height: 1px;
   background-color: #fa0404e4;
   flex-grow: 1;
   margin: 0 12px;
+}
+
+.price-info {
+  color: var(--white-color);
+}
+
+.price-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-info:first-child {
+  order: -1;
+}
+
+/* social */
+
+.social-list {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #00000048;
+  color: #303030;
+}
+
+.social-link:hover {
+  background-color: #d3ee06;
+  color: rgb(21, 255, 0);
+}
+
+.social-icon {
+  fill: currentColor;
 }
