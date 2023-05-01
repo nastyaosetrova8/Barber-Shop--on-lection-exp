@@ -1,15 +1,8 @@
-<!-- Типи зображень (декоративні/контентні) перевага та доступніть/скрін-рідер
-для чого атрибут alt
-декоративне зображення -властивості background-image/background-size/backgroumd-position/background-repeat(patterns)
-background-clip: content-box/padding-box
-затемнення фонового зображеня- оверлей градієнтом
-колор-стоп
-псевдо елементи before/after
-box-shadow
-svg-знайомство/переваги/мінуси
-способи застосування - inline/img/svg.sprite
-підгототовка svg стискання
-будування спрайту через сервіс
-додавання в спрайт нові іконки (неможливість застосування на бекграунд)
-атрибут aria-label
-зміна кольору іконки при ховері на батька видалення-fill -->
+position- relative/absolute/fixed/stiky
+z-index (у флекс контенері)
+overflow hidden/scroll/auto
+transform-translate/rotate/scale/skew
+transition
+overlay
+modal
+animation

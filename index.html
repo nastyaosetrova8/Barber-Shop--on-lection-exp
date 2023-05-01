@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +19,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link rel="stylesheet" href="./css/style.css" />
+    
   </head>
   <body>
     <header class="header">
       <div class="container header-wrapper">
-        <a class="logo" href="">
+        <a class="logo " href="">
           <img
             class="logo-img"
             src="./img/logo.svg"
@@ -31,12 +38,12 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link nav-items link" id="link" href="#about"
+              <a class="nav-link nav-items current" id="link" href="#about"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link link" href="">Services and prices</a>
+              <a class="nav-link link" href="">portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="">Barbers</a>
@@ -50,7 +57,7 @@
           <a class="nav-link header-tel" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button class="header-btn" type="button">booking</button>
+          <button class="header-btn animate__animated animate__bounce animate__infinite" type="button" data-modal-open >booking</button>
         </div>
       </div>
     </header>
@@ -103,7 +110,7 @@
         </ul>
 
         <p class="about-title">About</p>
-        <h2>Best Barbershop in your city</h2>
+        <h2 data-aos="fade-up">Best Barbershop in your city</h2>
         <p>
           If you want to add more confidence to your image, you should
           definitely visit us.
@@ -199,11 +206,55 @@
         </div>
       </section>
       <section>
-        <ul>
-          <li><img src="./img/gallery-1.jpg" width="270" alt="" /></li>
-          <li><img src="./img/gallery-2.jpg" width="270" alt="" /></li>
-          <li><img src="./img/gallery-3.jpg" width="270" alt="" /></li>
-          <li><img src="./img/gallery-4.jpg" width="270" alt="" /></li>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+
+            <div class="img-box">
+            <img src="./img/gallery-1.jpg" width="270" alt="" />
+            <div class="overlay">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis fugiat quam beatae ab laboriosam nisi velit quisquam harum dolores voluptatem autem, quaerat eius natus incidunt omnis accusantium explicabo fugit?</p>
+            </div>
+            </div>
+          <div class="gallery-bottom">
+            <h3>lorem2</h3>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          </li>
+          <li>
+            <div class="img-box">
+            <img src="./img/gallery-2.jpg" width="270" alt="" />
+          </div>
+          <div class="gallery-bottom">
+            <h3>lorem2
+
+            </h3>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          </li>
+          <li>
+            <div class="img-box">
+            
+            <img src="./img/gallery-3.jpg" width="270" alt="" />
+
+            </div>
+          <div class="gallery-bottom">
+            <h3>lorem2
+
+            </h3>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          </li>
+          <li>
+            <div class="img-box">
+            <img src="./img/gallery-4.jpg" width="270" alt="" />
+          </div>
+          <div class="gallery-bottom">
+            <h3>lorem2
+
+            </h3>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+          </li>
         </ul>
       </section>
       <section>
@@ -273,5 +324,15 @@
         <use href="./img/icons.svg#icon-antenna"></use>
       </svg>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>closed</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
