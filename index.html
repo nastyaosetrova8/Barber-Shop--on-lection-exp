@@ -314,7 +314,7 @@
             <use href="./img/icons.svg#icon-facebook"></use>
           </svg>
         </a></li>
-        <li class="social-item"><a href="" class="social-link">
+        <li class="social-item"><a href=""  class="social-link">
           <svg class="social-icon" width="20" height="20">
             <use href="./img/icons.svg#icon-linkedin"></use>
           </svg>
@@ -324,11 +324,51 @@
         <use href="./img/icons.svg#icon-antenna"></use>
       </svg>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
+        
         <button class="close-btn" data-modal-close>closed</button>
+        <form class="modal-form">
+          <label class="modal-form-label">
+            <span class="modal-form-name">name</span>
+            <input class="modal-form-input" type="text" name="name">
+            
+          </label>
+          <label class="modal-form-label" >
+            <span class="modal-form-name">tel</span>
+            <span class="input-wrapper">
+              <input class="modal-form-input" type="tel" name="tel">
+              <svg class="modal-form-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-insta"></use>
+              </svg>
+          </span>
+          </label>
+            <label class="modal-form-label">
+              <span class="modal-form-name">email</span>
+            <input class="modal-form-input"type="email" name="email">
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-insta"></use>
+            </svg>
+          </label>
+          <label class="modal-form-label" >
+            <textarea class="modal-form-comment" name="comment" placeholder="text input"></textarea>
+          </label>
+          <input class="checkbox visually-hidden" type="checkbox" id="check">
+          <label class="checkbox-wrap" for="check">
+            <span class="custom-checkbox">
+              <svg class="custom-icon" width="10" height="10">
+                <use href="./img/icons.svg#icon-insta"></use>
+              </svg>
+            </span>
+            Lorem ipsum dolor sit amet.
+          </label>
+          <button class="modal-form-btn" type="submit">send</button>
+        </form>
       </div>
     </div>
+    <svg class="" width="32" height="22">
+      <use href="./img/icons.svg#icon-burger"></use>
+    </svg>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
