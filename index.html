@@ -28,13 +28,13 @@
     <header class="header">
       <div class="container header-wrapper">
         <a class="logo " href="">
-          <img
-            class="logo-img"
-            src="./img/logo.svg"
-            width="69"
-            alt="barber-logo"
-          />
+          <svg class="logo-icon" width="30" height="30">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
         </a>
+        <button class="burger-menu js-open-menu"><svg class="btn-icon" width="32" height="22">
+          <use href="./img/icons.svg#icon-burger"></use>
+        </svg></button>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -62,7 +62,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-wrapper">
           <div class="social-wrapper">
             <ul class="social-list">
@@ -95,36 +95,41 @@
             </p>
           </div>
         </div>
-      </section>
+      </section>  -->
       <section id="about">
-        <ul>
-          <li class="about-item">
-            <img
-              class="img"
-              src="./img/about-1.jpg"
-              width="270"
-              alt="head trim"
-            />
-          </li>
-          <li><img src="./img/about-2.jpg" width="270" alt="beard trim" /></li>
-        </ul>
+        <div class="container about-wrapper">
+          <ul class="about-list">
+            <li class="about-item">
+              <img
+                class="img"
+                src="./img/about-1.jpg"
+                width="330"
+                height="270"
+                alt="head trim"
+              />
+            </li>
+            <li><img src="./img/about-2.jpg" width="330" height="270" alt="beard trim" /></li>
+          </ul>
 
-        <p class="about-title">About</p>
-        <h2 data-aos="fade-up">Best Barbershop in your city</h2>
-        <p>
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p>
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. into the hands of our master, you will never be
-          the same again. We are a team that is always "on the same wave" with
-          clients. Therefore, we are always ready to improve everyone who comes
-          to us!
-        </p>
-        <button type="button">online-booking</button>
-      </section>
-      <section class="price">
+          <div class="about-content">
+            <p class="about-suptitle">About</p>
+            <h2 class="about-title" data-aos="fade-up">Best Barbershop in your city</h2>
+            <p class="about-descr">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p>
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. into the hands of our master, you will never be
+              the same again. We are a team that is always "on the same wave" with
+              clients. Therefore, we are always ready to improve everyone who comes
+              to us!
+            </p>
+            <button class="about-btn button" type="button">online-booking</button>
+          </div>
+        </div>
+      </section> 
+      <!-- <section class="price">
         <div class="container">
           <p>Spend your time with the best masters</p>
           <h2 class="price-title">Services and prices</h2>
@@ -324,7 +329,7 @@
         <use href="./img/icons.svg#icon-antenna"></use>
       </svg>
     </footer>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         
         <button class="close-btn" data-modal-close>closed</button>
@@ -369,7 +374,54 @@
     <svg class="" width="32" height="22">
       <use href="./img/icons.svg#icon-burger"></use>
     </svg>
+    <div class="mobile-menu js-menu-container">
+      <button class="close-btn js-close-menu" type="button">close</button>
+      <ul class="menu-mob">
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contacts</a></li>
+      </ul>
+
+ 
+        <ul class="menu-adress">
+          <li><a href="">0320403904fdfdsf</a></li>
+          <li><a href="">sdfsdfsd@gmail.com</a></li>
+        </ul>
+        <ul>
+          <li><a href="">svg</a></li>
+          <li><a href="">svg</a></li>
+          <li><a href="">svg</a></li>
+          <li><a href="">svg</a></li>
+        </ul>
+    </div> -->
+    <div class="mobile-menu js-menu-container">
+      <button class="close-btn js-close-menu" type="button">close</button>
+      <ul class="menu-mob">
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contacts</a></li>
+      </ul>
+
+ 
+        <ul class="menu-adress">
+          <li><a href="">0320403904fdfdsf</a></li>
+          <li><a href="">sdfsdfsd@gmail.com</a></li>
+        </ul>
+        <ul>
+          <li><a href="">svg</a></li>
+          <li><a href="">svg</a></li>
+          <li><a href="">svg</a></li>
+          <li><a href="">svg</a></li>
+        </ul>
+    </div> 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
