@@ -25,7 +25,7 @@
     
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-wrapper">
         <a class="logo " href="">
           <svg class="logo-icon" width="30" height="30">
@@ -62,7 +62,7 @@
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-wrapper">
           <div class="social-wrapper">
             <ul class="social-list">
@@ -95,20 +95,51 @@
             </p>
           </div>
         </div>
-      </section>  -->
+      </section>  
       <section id="about">
         <div class="container about-wrapper">
           <ul class="about-list">
             <li class="about-item">
               <img
                 class="img"
-                src="./img/about-1.jpg"
-                width="330"
-                height="270"
+                src="./img/about-1-tablet.jpg"
+                srcset="
+                ./img/about-1.jpg 270w,
+                ./img/about-1-tablet.jpg 330w,
+                ./img/about-1@2x.jpg 540w,
+                ./img/about-1-tablet@2x.jpg 660w,
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px"  
                 alt="head trim"
+                loading="lazy"
               />
             </li>
-            <li><img src="./img/about-2.jpg" width="330" height="270" alt="beard trim" /></li>
+            <li>
+              <!-- <img
+              class="img"
+              src="./img/about-2-tablet.jpg"
+              srcset="
+              ./img/about-2.jpg 270w,
+              ./img/about-2-tablet.jpg 330w,
+              ./img/about-2@2x.jpg 540w,
+              ./img/about-2-tablet@2x.jpg 660w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px"  
+              alt="head trim"
+            /> -->
+
+            <!-- <picture>
+              <source srcset="./img/about-2.jpg 1x, ./img/about-2@2x.jpg 2x" media="(min-width: 1200px) ">
+
+              <source srcset="./img/about-2-tablet.jpg 1x, ./img/about-2-tablet@2x.jpg 2x" media="(min-width: 768px) ">
+  
+
+              <img  src="./img/about-2-tablet.jpg" alt="fgfg" width="330" loading="lazy"   >
+            </picture> -->
+
+
+          
+          <!-- </li>
           </ul>
 
           <div class="about-content">
@@ -129,7 +160,7 @@
           </div>
         </div>
       </section> 
-      <!-- <section class="price">
+    <section class="price">
         <div class="container">
           <p>Spend your time with the best masters</p>
           <h2 class="price-title">Services and prices</h2>
@@ -393,7 +424,7 @@
           <li><a href="">svg</a></li>
           <li><a href="">svg</a></li>
         </ul>
-    </div> -->
+    </div> 
     <div class="mobile-menu js-menu-container">
       <button class="close-btn js-close-menu" type="button">close</button>
       <ul class="menu-mob">
@@ -413,7 +444,15 @@
           <li><a href="">svg</a></li>
           <li><a href="">svg</a></li>
         </ul>
-    </div> 
+    </div>  -->
+    <!-- <div class="img-box">
+      <img src="./img/team-1.jpg" alt="" width="264">
+    </div> -->
+    
+  <!-- </div>  -->
+  <img src="./img/about-1.jpg" alt="" srcset="./img/about-1.jpg 1x, ./img/about-1@2x.jpg 2x">
+  <div class="hero-bg">
+  </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
